@@ -1,0 +1,22 @@
+[
+    {
+        "UpdateStageName":"Download Stable",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://minecraft.azureedge.net/bin-linux/bedrock-server-{{ServerVersion}}.zip",
+        "UnzipUpdateSource":true,
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
+    },
+    {
+        "UpdateStageName":"Download Stable",
+        "UpdateSourcePlatform":"Windows",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://minecraft.azureedge.net/bin-win/bedrock-server-{{ServerVersion}}.zip",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
+    }
+]
